@@ -1,0 +1,38 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#pinterest-card {
+  width: 35rem;
+  height: 45rem;
+  background-color: green;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 18rem;
+  background-image: url(./autumn.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 5%;
+}
+
+#red-button {
+  background-color: red;
+  width: 8rem;
+  height: 5rem;
+  border-radius: 45%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
