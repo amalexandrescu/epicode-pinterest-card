@@ -6,6 +6,7 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: Georgia, "Times New Roman", Times, serif;
 }
 
 #pinterest-card {
@@ -16,29 +17,37 @@ body {
   margin-right: auto;
   position: relative;
   top: 18rem;
-  background-image: url(./autumn.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
   border-radius: 5%;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
 }
 
 #pinterest-card:hover {
   cursor: pointer;
 }
 
-#pinterest-card:hover #red-button {
+#red-button {
   background-color: red;
   width: 8rem;
   height: 5rem;
   border-radius: 50px;
   font-size: 2rem;
   position: absolute;
-  top: 1.5rem;
+  top: -5rem;
   right: 1.5rem;
   user-select: none;
+  transition: top 0.5s linear;
 }
 
-#pinterest-card:hover #red-button-text {
+#pinterest-card:hover #red-button {
+  top: 1.5rem;
+}
+
+#red-button-text {
   color: white;
   position: absolute;
   height: 5rem;
@@ -52,30 +61,22 @@ body {
 }
 
 #pinterest-card-title {
-  visibility: hidden;
-  /* transform: translateY(-10px); */
-}
-
-#pinterest-card:hover #pinterest-card-title {
-  visibility: visible;
   width: 23rem;
   height: 3.5rem;
   background-color: white;
   opacity: 0.6;
   position: absolute;
-  bottom: 1.5rem;
+  bottom: -3.5rem;
   left: 1.5rem;
   border-radius: 50px;
-  /* transform: translateY(-100%);
-  transition: transform 1s; */
+  transition: bottom 0.5s linear;
+}
+
+#pinterest-card:hover #pinterest-card-title {
+  bottom: 1.5rem;
 }
 
 #arrow-icon {
-  visibility: hidden;
-}
-
-#pinterest-card:hover #arrow-icon {
-  visibility: visible;
   height: 3.5rem;
   width: 1.5rem;
   position: absolute;
@@ -86,11 +87,6 @@ body {
 }
 
 #site-name-address {
-  visibility: hidden;
-}
-
-#pinterest-card:hover #site-name-address {
-  visibility: visible;
   height: 3.5rem;
   font-size: 2.5rem;
   position: absolute;
@@ -104,44 +100,23 @@ body {
   user-select: none;
 }
 
-#menu-button {
-  visibility: hidden;
-}
-
-#pinterest-card:hover #menu-button {
-  visibility: visible;
+#share-button {
   width: 3.5rem;
   height: 3.5rem;
   background-color: white;
   border-radius: 50%;
   position: absolute;
-  bottom: 1.5rem;
-  right: 1.5rem;
+  bottom: -3.5rem;
+  right: 6rem;
   opacity: 0.6;
-}
-
-#share-button {
-  visibility: hidden;
+  transition: bottom 0.5s linear;
 }
 
 #pinterest-card:hover #share-button {
-  visibility: visible;
-  width: 3.5rem;
-  height: 3.5rem;
-  background-color: white;
-  border-radius: 50%;
-  position: absolute;
   bottom: 1.5rem;
-  right: 6rem;
-  opacity: 0.6;
 }
 
 #share-icon {
-  visibility: hidden;
-}
-
-#pinterest-card:hover #share-icon {
-  visibility: visible;
   position: absolute;
   top: 0;
   bottom: 0;
@@ -153,28 +128,23 @@ body {
   --ionicon-stroke-width: 5rem;
 }
 
-#menu-dots {
-  visibility: hidden;
+#menu-button {
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -3.5rem;
+  right: 1.5rem;
+  opacity: 0.6;
+  transition: bottom 0.5s linear;
 }
 
-#pinterest-card:hover #menu-dots {
-  visibility: visible;
-  width: 3.5rem;
-  height: 1.5rem;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
+#pinterest-card:hover #menu-button {
+  bottom: 1.5rem;
 }
 
 #dots-icon {
-  visibility: hidden;
-}
-
-#pinterest-card:hover #dots-icon {
-  visibility: visible;
   position: absolute;
   top: 0;
   bottom: 0;
