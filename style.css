@@ -22,17 +22,166 @@ body {
   border-radius: 5%;
 }
 
-#red-button {
+#pinterest-card:hover {
+  cursor: pointer;
+}
+
+#pinterest-card:hover #red-button {
   background-color: red;
   width: 8rem;
   height: 5rem;
-  border-radius: 45%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
+  border-radius: 50px;
   font-size: 2rem;
   position: absolute;
-  top: 1rem;
-  right: 1rem;
+  top: 1.5rem;
+  right: 1.5rem;
+  user-select: none;
+}
+
+#pinterest-card:hover #red-button-text {
+  color: white;
+  position: absolute;
+  height: 5rem;
+  width: 5rem;
+  text-align: center;
+  top: 22px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#pinterest-card-title {
+  visibility: hidden;
+  /* transform: translateY(-10px); */
+}
+
+#pinterest-card:hover #pinterest-card-title {
+  visibility: visible;
+  width: 23rem;
+  height: 3.5rem;
+  background-color: white;
+  opacity: 0.6;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+  border-radius: 50px;
+  /* transform: translateY(-100%);
+  transition: transform 1s; */
+}
+
+#arrow-icon {
+  visibility: hidden;
+}
+
+#pinterest-card:hover #arrow-icon {
+  visibility: visible;
+  height: 3.5rem;
+  width: 1.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 1rem;
+  right: 0;
+}
+
+#site-name-address {
+  visibility: hidden;
+}
+
+#pinterest-card:hover #site-name-address {
+  visibility: visible;
+  height: 3.5rem;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 3rem;
+  right: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  user-select: none;
+}
+
+#menu-button {
+  visibility: hidden;
+}
+
+#pinterest-card:hover #menu-button {
+  visibility: visible;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  opacity: 0.6;
+}
+
+#share-button {
+  visibility: hidden;
+}
+
+#pinterest-card:hover #share-button {
+  visibility: visible;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 1.5rem;
+  right: 6rem;
+  opacity: 0.6;
+}
+
+#share-icon {
+  visibility: hidden;
+}
+
+#pinterest-card:hover #share-icon {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: black;
+  font-size: 2rem;
+  --ionicon-stroke-width: 5rem;
+}
+
+#menu-dots {
+  visibility: hidden;
+}
+
+#pinterest-card:hover #menu-dots {
+  visibility: visible;
+  width: 3.5rem;
+  height: 1.5rem;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+#dots-icon {
+  visibility: hidden;
+}
+
+#pinterest-card:hover #dots-icon {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  color: black;
+  font-size: 2rem;
+  --ionicon-stroke-width: 5rem;
 }
